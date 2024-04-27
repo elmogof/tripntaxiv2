@@ -13,7 +13,7 @@ import SiteMap from './SiteMap'
 
 const PageRouter = () => {
   return (
-    <Router basename='/react'>
+    <Router basename='/'>
       <Switch>
         <Route path='/airport-shuttle'>
           <AirportShuttleService />

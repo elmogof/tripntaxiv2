@@ -100,12 +100,6 @@ function GuidedTourModal({ tour, btnSize }) {
             >
               {tour.description}
             </p>
-            <p
-              className='fs-6 text-center fw-bold'
-              style={{ color: '#415165' }}
-            >
-              PRICE per person: US$ {tour.price}.-
-            </p>
             <ContactButtons
               btnText='Make a reservation'
               url='https://wa.me/50686311727?text=Hi!%20We%20would%20like%20to%20reserve%20a%20tour'

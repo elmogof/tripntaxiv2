@@ -1,3 +1,89 @@
 {
-    "flag": "es-flag.svg"
+    "flag": "es-flag.svg",
+    "tours": [
+        {
+            "title": "PALO VERDE",
+            "description": "Acompáñanos a descubrir este maravilloso lugar lleno de tradición y naturaleza, ubicado a solo 1 y 30 min Tamarindo. Podrás disfrutar de un paseo en bote por el río Tempisque, el mas importante de la provincia,  apreciando gran diversidad de aves y animales, y luego degustar la auténtica comida costarricense, preparada a la leña en el Rancho Los Coyotes. Para finalizar haremos una parada en un pueblo mítico donde los lugareños nos mostraran el proceso de fabricación de artesanías de cerámica siguendo la tradición indígena.",
+            "subname": "paloverde",
+            "images": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg"
+            ]
+        },
+        {
+            "title": "CAÑON DE LA VIEJA",
+            "description": "If what you're seeking is adrenaline, this is the best place for you. Located just 2 hours from Tamarindo, Cañon de la Vieja offers you a full day of activities. 10 zip lines and a rock climbing wall will let you enjoy a magnificent view of the canyon. Additionally, you can horseback ride to the river and then conquer the rapids while rafting, not forgetting the buffet service, and ending the day relaxed at the spa, with access to sauna, volcanic mud treatments, and thermal pools that will make this tour an unforgettable experience.",
+            "subname": "vieja",
+            "images": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg",
+                "10.jpg",
+                "11.jpg",
+                "12.jpg",
+                "13.jpg",
+                "14.jpg"
+            ]
+        },
+        {
+            "title": "LA LEONA WATERFALL",
+            "description": "Located 2 hours from Tamarindo, this place combines hiking with activity in its fascinating turquoise waters that will take you through caves and waterfalls. Without a doubt, this experience will become a cherished memory of Costa Rica that you will hold dear in your heart.",
+            "subname": "leona",
+            "images": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg",
+                "10.jpg",
+                "11.jpg",
+                "12.jpg"
+            ]
+        },
+        {
+            "title": "BEACHES TOUR",
+            "description": "Join us to discover the most beautiful and less visited beaches, in a more personal and unforgettable experience. We will visit beaches with turquoise waters, white sand, and very gentle waves for your enjoyment. Without a doubt, you will reach places that not all tourists have had the chance to explore 😉.",
+            "subname": "playas",
+            "images": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg",
+                "10.jpg",
+                "11.jpg",
+                "12.jpg"
+            ]
+        },
+        {
+            "title": "LLANOS DEL CORTEZ WATERFALLS",
+            "description": "Located 2 hours and 30 minutes from Tamarindo, it's the perfect place if you want to swim in its refreshing waters or simply relax on the sand surrounding this wonderful place. Without a doubt, you won't be able to resist taking photos of the impressive main waterfall.",
+            "subname": "cortez",
+            "images": [
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg"
+            ]
+        }
+    ]
 }
