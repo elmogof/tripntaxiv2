@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense } from 'react';
+import {
+  faFacebookSquare,
+  faTelegramPlane,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import PageRouter from './screens/PageRouter'
 
-function App() {
+const App = () => {
+  return <PageRouter />
+}
+
+export default function WrappedApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback="...is loading">
+      <App />
+    </Suspense>
   );
 }
 
-export default App;
+library.add(faEnvelope, faFacebookSquare, faWhatsapp, faTelegramPlane, faPhone)
