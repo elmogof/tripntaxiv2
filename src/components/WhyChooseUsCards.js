@@ -2,8 +2,12 @@ import React from 'react'
 import tazul from '../media/azul.png'
 import tverde from '../media/verde.png'
 import ContactButtons from './ContactButtons'
+import { useTranslation } from 'react-i18next';
 
-function WhyChooseUsCards(props) {
+function WhyChooseUsCards() {
+  const { t } = useTranslation();
+  const whyChooseUs = t('whychooseus');
+
   return (
     <>
       <div className='container-fluid d-flex flex-column p-lg-0 p-5'>
@@ -23,25 +27,25 @@ function WhyChooseUsCards(props) {
           WHY US?
         </h1>
         <div className='d-flex flex-column flex-xl-row py-3 px-lg-5 my-1'>
-          {props.data.map((st) => (
+          {whyChooseUs.map((item, index) => (
             <div
               className='col-lg d-flex flex-column flex-md-row flex-xl-column py-3 px-3'
-              key={st.id}
+              key={index}
             >
               <div className='d-flex justify-content-center'>
                 <img
                   className='align-self-center fit-img'
-                  src={st.img_url}
-                  alt={st.alt_attribute}
+                  src={`/images/whyus/${item.image}`}
+                  alt={item.image}
                   height='200'
                 />
               </div>
               <div className='d-flex flex-column justify-content-center ps-0 ps-md-3 ps-xl-0 pt-3 pt-md-0 pt-lg-3'>
                 <h4 className='text-center' style={{ color: '#415165' }}>
-                  {st.title}
+                  {item.title}
                 </h4>
                 <p className='fs-6t text-center' style={{ color: '#415165' }}>
-                  {st.description}
+                  {item.description}
                 </p>
               </div>
             </div>

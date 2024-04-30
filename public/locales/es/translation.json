@@ -85,5 +85,74 @@
                 "4.jpg"
             ]
         }
+    ],
+    "services": [
+        {
+            "title": "TAXI",
+            "description": "At Trip-n-Taxi, we focus on the Tamarindo area of Guanacaste, including among others: Playa Flamingo, Playa Grande, Playa Conchal or Santa Cruz. Enjoy a beach day, do your shopping or get to dinner comfortably. Trip-n-Taxi will drive you safe!",
+            "image": "1.png",
+            "url": "taxi-service"
+        },
+        {
+            "title": "AIRPORT SHUTTLE",
+            "description": "We do direct pick-ups and transfers between Tamarindo area and both int'l airports: Liberia and San José. Contact us in advance with your details and flight schedule and we’ll be there. No queues, no waits, no last-minute surprises. We always reply to your emails quickly.",
+            "image": "2.png",
+            "url": "airport-shuttle"
+        },
+        {
+            "title": "GUIDED TOURS",
+            "description": "Feel free to also book your day trips and tours with Trip-n-Taxi. Henry Chavez  and his team are from Guanacaste and knows many of the out-of-way day trips and tours that will make your holiday in Costa Rica that much more special!",
+            "image": "3.png",
+            "url": "tours"
+        }
+    ],
+    "whychooseus": [
+        {
+            "title": "RELIABILITY",
+            "description": "Cleanliness; fully inspected and totally equipped vehicles; wifi on board; experienced drivers, English speaking. We catter the trip and transportation to accomodate your needs and requests.",
+            "image": "1.jpg"
+        },
+        {
+            "title": "24/7",
+            "description": "Any time you need a transportation. We work around the clock and are always on time.",
+            "image": "2.jpg"
+        },
+        {
+            "title": "BEST EXPERIENCE",
+            "description": "With us you will not be an spectator, you will live the experience to its fullest. Take back home the whole flavor of Costa Rica thru an unforgettable trip. Pura Vida!",
+            "image": "3.jpg"
+        }
+    ],
+    "favorito": {
+        "title": "PALO VERDE",
+        "description": "Acompáñanos a descubrir este maravilloso lugar lleno de tradición y naturaleza, ubicado a solo 1 y 30 min Tamarindo. Podrás disfrutar de un paseo en bote por el río Tempisque, el mas importante de la provincia,  apreciando gran diversidad de aves y animales, y luego degustar la auténtica comida costarricense, preparada a la leña en el Rancho Los Coyotes. Para finalizar haremos una parada en un pueblo mítico donde los lugareños nos mostraran el proceso de fabricación de artesanías de cerámica siguendo la tradición indígena.",
+        "subname": "paloverde",
+        "images": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg",
+            "6.jpg",
+            "7.jpg"
+        ]
+    },
+    "testimonials": [
+        {
+            "name": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Consectetur adipiscing elit duis tristique. Enim blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Massa ultricies mi quis hendrerit dolor magna eget est. Viverra justo nec ultrices dui sapien eget mi. Dolor magna eget est lorem ipsum dolor sit. Feugiat in ante metus dictum at tempor. Lectus magna fringilla urna porttitor rhoncus dolor. Libero enim sed faucibus turpis in eu. Arcu bibendum at varius vel pharetra vel turpis."
+        },
+        {
+            "name": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Consectetur adipiscing elit duis tristique. Enim blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Massa ultricies mi quis hendrerit dolor magna eget est. Viverra justo nec ultrices dui sapien eget mi. Dolor magna eget est lorem ipsum dolor sit. Feugiat in ante metus dictum at tempor. Lectus magna fringilla urna porttitor rhoncus dolor. Libero enim sed faucibus turpis in eu. Arcu bibendum at varius vel pharetra vel turpis."
+        },
+        {
+            "name": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Consectetur adipiscing elit duis tristique. Enim blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Massa ultricies mi quis hendrerit dolor magna eget est. Viverra justo nec ultrices dui sapien eget mi. Dolor magna eget est lorem ipsum dolor sit. Feugiat in ante metus dictum at tempor. Lectus magna fringilla urna porttitor rhoncus dolor. Libero enim sed faucibus turpis in eu. Arcu bibendum at varius vel pharetra vel turpis."
+        },
+        {
+            "name": "Lorem ipsum dolor sit amet",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Consectetur adipiscing elit duis tristique. Enim blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Massa ultricies mi quis hendrerit dolor magna eget est. Viverra justo nec ultrices dui sapien eget mi. Dolor magna eget est lorem ipsum dolor sit. Feugiat in ante metus dictum at tempor. Lectus magna fringilla urna porttitor rhoncus dolor. Libero enim sed faucibus turpis in eu. Arcu bibendum at varius vel pharetra vel turpis."
+        }
     ]
 }

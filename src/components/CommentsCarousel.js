@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import { useTranslation } from "react-i18next";
 
 function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
@@ -27,7 +28,9 @@ function useWindowSize() {
   return windowSize
 }
 
-export default function CommentsCarousel({ data }) {
+export default function CommentsCarousel() {
+  const { t } = useTranslation();
+  const testimonials = t("testimonials");
   var centerSlidePercentage = 33.5
   var widthPercentage = '85%'
 
@@ -56,9 +59,9 @@ export default function CommentsCarousel({ data }) {
         width={widthPercentage}
         showIndicators={false}
       >
-        {data.map((comment) => {
+        {testimonials.map((comment, index) => {
           return (
-            <div className='px-3 px-sm-5 px-xl-3' key={comment.id}>
+            <div className='px-3 px-sm-5 px-xl-3' key={index}>
               <h3
                 className='text-break p-1 text-center'
                 style={{ color: '#415165' }}
@@ -69,7 +72,7 @@ export default function CommentsCarousel({ data }) {
                 className='text-justify text-break'
                 style={{ color: '#415165' }}
               >
-                {comment.user_comment}
+                {comment.description}
               </p>
             </div>
           )
