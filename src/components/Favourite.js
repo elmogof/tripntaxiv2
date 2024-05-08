@@ -72,9 +72,9 @@ export default function Favourite() {
               width={widthPercentage}
               showIndicators={false}
             >
-              {favorito.images.map((image) => {
+              {favorito.images.map((image, index) => {
                 return (
-                  <div className="align-self-center" key={image.id}>
+                  <div className="align-self-center" key={index}>
                     <img
                       className="p-1 fit-img-favourite"
                       src={`/images/${favorito.subname}/${image}`}

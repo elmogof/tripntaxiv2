@@ -154,5 +154,50 @@
             "name": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Consectetur adipiscing elit duis tristique. Enim blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Massa ultricies mi quis hendrerit dolor magna eget est. Viverra justo nec ultrices dui sapien eget mi. Dolor magna eget est lorem ipsum dolor sit. Feugiat in ante metus dictum at tempor. Lectus magna fringilla urna porttitor rhoncus dolor. Libero enim sed faucibus turpis in eu. Arcu bibendum at varius vel pharetra vel turpis."
         }
+    ],
+    "activities":[
+        {
+            "title": "SHOPPING",
+            "description": "Whether you need your provision of groceries or choose for a pleasant shopping evening, count on us to manage the hassle of driving, parking and loading",
+            "image": "1.jpeg"
+        }, {
+            "title": "SURFING",
+            "description": "We are always there to move you, your pals and boards to the best surfing spots in the area",
+            "image": "2.jpeg"
+        }, {
+            "title": "DINING",
+            "description": "Pleasure and safety come along. Dine and wine with the  peace of mind to be driven back home.",
+            "image": "3.jpeg"
+        }
+    ],
+    "taxis":[
+        {
+            "title": "PLAYA FLAMINGO",
+            "description": "Don't miss the beach of magical sunsets. The beautiful views that this wonderful place offers to its visitors will be a vital part of your vacation.",
+            "image": "4.jpeg"
+        }, {
+            "title": "PLAYA CONCHAL",
+            "description": "Named after the sand found here, that is composed of hundreds of millions of tiny crushed shells.",
+            "image": "5.jpeg"
+        }, {
+            "title": "PLAYA MINAS",
+            "description": "This secluded beach with soft tan sand and stunningly clear water is a lesser known spot perfect for swimming. Enjoy a magical day.",
+            "image": "6.jpeg"
+        }
+    ],
+    "airports":[
+        {
+            "title": "Tamarindo Airport",
+            "description": "Private transportation to Tamarindo airport. Two local airlines offer domestic flights from/to this small and convenient airport.",
+            "image": "1.jpeg"
+        }, {
+            "title": "Tamarindo Airport",
+            "description": "Private trasportation to Liberia International airport (LIR). Van service, free wifi.",
+            "image": "2.jpeg"
+        }, {
+            "title": "Tamarindo Airport",
+            "description": "Private transportation to San José International  airport (SJO). Van service, free wifi.",
+            "image": "3.jpeg"
+        }
     ]
 }

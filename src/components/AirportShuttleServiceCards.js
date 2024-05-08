@@ -2,6 +2,7 @@ import React from 'react'
 import tverde from '../media/verde.png'
 import tazul from '../media/azul.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from "react-i18next";
 
 function normalizeText(text) {
   return text
@@ -10,7 +11,10 @@ function normalizeText(text) {
     .replace(/^\w/, (c) => c.toUpperCase())
 }
 
-export default function AirportShuttleServiceCards({ data }) {
+export default function AirportShuttleServiceCards() {
+  const { t } = useTranslation();
+  const airports = t("airports");
+
   return (
     <div className='container-fluid d-flex flex-column px-3 px-sm-5 p-lg-0 p-5'>
       <div
@@ -29,16 +33,16 @@ export default function AirportShuttleServiceCards({ data }) {
         AIRPORT TRANFERS
       </h1>
       <div className='d-flex flex-column flex-xl-row justify-content-center py-3 px-lg-5'>
-        {data.map((service) => (
+        {airports.map((airport, index) => (
           <div
             className='col-xl d-flex flex-column border-lime m-2 justify-content-between flex-md-row flex-xl-column py-3 px-3'
-            key={service.id}
+            key={index}
           >
             <div className='d-flex justify-content-center'>
               <img
                 className='align-self-center fit-img'
-                src={service.img_url}
-                alt={service.alt_attribute}
+                src={`/images/airport/${airport.image}`}
+                alt={airport.image}
               />
             </div>
             <div className='d-flex flex-grow-1 flex-xl-grow-0 flex-column justify-content-center ps-0 ps-lg-5 ps-xl-0 pt-3 pt-md-0 pt-lg-3'>
@@ -46,31 +50,19 @@ export default function AirportShuttleServiceCards({ data }) {
                 className='text-center text-break'
                 style={{ color: '#415165' }}
               >
-                {service.title}
+                {airport.title}
               </h4>
               <p
                 className='fs-6 text-center text-break'
                 style={{ color: '#415165' }}
               >
-                {service.description}
-              </p>
-              <p
-                className='fs-6 text-center fw-bold m-0'
-                style={{ color: '#415165' }}
-              >
-                PRICE (1-4 passengers): US$ {service.currency} {service.price}
-              </p>
-              <p
-                className='fs-6 text-center fw-bold'
-                style={{ color: '#415165' }}
-              >
-                Additional person: US$ {service.price / 4}
+                {airport.description}
               </p>
               <div className='d-flex flex-column flex-lg-row justify-content-center align-items-center'>
                 <a
                   className={`btn fw-bold mb-2 mb-lg-0 me-lg-1`}
                   href={`https://wa.me/50686311727?text=Hi!%20We%20would%20like%20some%20information%20about%20${normalizeText(
-                    service.title
+                    airport.title
                   )}%20shuttle%20service`}
                   style={{ backgroundColor: '#9ed0c9', color: '#415165' }}
                   role='button'

@@ -1,23 +1,27 @@
 import React from 'react'
 import tverde from '../media/verde.png'
 import ContactButtons from './ContactButtons'
+import { useTranslation } from "react-i18next";
 
-export default function TaxiServiceCards(props) {
+export default function TaxiServiceCards() {
+  const { t } = useTranslation();
+  const taxis = t("taxis");
+
   return (
     <div className='container-fluid d-flex flex-column pb-lg-0 px-3 px-sm-5 px-lg-0 py-5'>
       <h1 className='fw-bold text-center' style={{ color: '#415165' }}>
         PRIVATE TRANSPORTATION AROUND
       </h1>
       <div className='d-flex flex-column flex-xl-row flex-wrap justify-content-center py-3 px-lg-5'>
-        {props.data.map((service) => (
+        {taxis.map((taxi, index) => (
           <div
             className='col-xl d-flex flex-column border-lime m-2 justify-content-between flex-md-row flex-xl-column py-3 px-3'
-            key={service.id}
+            key={index}
           >
             <div className='d-flex justify-content-center'>
               <img
                 className='align-self-center fit-img'
-                src={service.img_url}
+                src={`/images/taxi/${taxi.image}`}
                 alt='...'
               />
             </div>
@@ -26,19 +30,13 @@ export default function TaxiServiceCards(props) {
                 className='text-center text-break'
                 style={{ color: '#415165' }}
               >
-                {service.title}
+                {taxi.title}
               </h4>
               <p
                 className='fs-6 text-center text-break'
                 style={{ color: '#415165' }}
               >
-                {service.description}
-              </p>
-              <p
-                className='fs-6 text-center fw-bold'
-                style={{ color: '#415165' }}
-              >
-                PRICE: US$ {service.price}
+                {taxi.description}
               </p>
             </div>
           </div>
