@@ -3,8 +3,12 @@ import tverde from '../media/verde.png'
 import henry from '../media/about-us.png'
 import Navigation from '../components/Navigation'
 import ScrollToTop from '../components/ScrollToTop'
+import { useTranslation } from "react-i18next";
 
 export default function AboutUs() {
+  const { t } = useTranslation();
+  const about = t("about");
+
   return (
     <>
       <ScrollToTop />
@@ -32,29 +36,19 @@ export default function AboutUs() {
               className='text-center fw-bold mb-3 pt-4 pt-lg-0'
               style={{ color: '#415165' }}
             >
-              ABOUT US
+              {about.title}
             </h1>
             <p className='text-justify fs-4' style={{ color: '#415165' }}>
-              Henry Chaves lives in Villarreal and is a well known member of the
-              community. At the time he started his business he was a solo tour
-              and taxi driver. 20 years later he has driven thousands of miles
-              around the country, has a solid company and goes on enjoying his
-              work.
+              {about.info[0]}
             </p>
             <p className='text-justify fs-4' style={{ color: '#415165' }}>
-              Now he has a team that shares his same love for the country and a
-              passionate pride to show the best spots in their best season.
+              {about.info[1]}
             </p>
             <p className='text-justify fs-4' style={{ color: '#415165' }}>
-              Being from Guanacaste, Henry knows well the culture and traditions
-              of the province. His guided tours are a mix of adventure, family
-              trip and dive-in Costa Rican culture.
+              {about.info[2]}
             </p>
-
             <p className='text-justify fs-4' style={{ color: '#415165' }}>
-              English speaking, reliable and always on time, Henry and his team
-              treat each drive and passenger as a special one, and make sure
-              that everyone lives the real experience of Costa Rica.
+              {about.info[3]}
             </p>
           </div>
         </div>

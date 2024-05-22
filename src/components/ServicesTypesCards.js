@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 export default function ServicesTypesCards() {
   const { t } = useTranslation();
   const services = t("services");
+  const header = t("header");
 
   return (
     <>
@@ -26,12 +27,12 @@ export default function ServicesTypesCards() {
           />
         </div>
         <h1 className="fw-bold text-center" style={{ color: "#415165" }}>
-          SERVICES
+          {header[1]}
         </h1>
         <div className="d-flex flex-column flex-xl-row justify-content-center py-3 px-lg-5">
           {services.map((service, index) => (
             <div
-              className="col-lg d-flex flex-column justify-content-between flex-md-row flex-xl-column py-4 py-lg-3 text-center px-3"
+              className="col-lg d-flex flex-column flex-md-row flex-xl-column py-4 py-lg-3 text-center px-3"
               key={index}
             >
               <div className="d-flex justify-content-center">
@@ -42,7 +43,7 @@ export default function ServicesTypesCards() {
                   height="190"
                 />
               </div>
-              <div className="d-flex flex-column justify-content-between ps-0 ps-md-5 ps-xl-0 pt-3 pt-md-0 pt-lg-3">
+              <div className="d-flex flex-column h-100 justify-content-between ps-0 ps-md-5 ps-xl-0 pt-3 pt-md-0 pt-lg-3">
                 <h4 className="text-center" style={{ color: "#415165" }}>
                   {service.title}
                 </h4>

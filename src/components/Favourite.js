@@ -58,6 +58,7 @@ export default function Favourite() {
           />
         </div>
         <h1 className="fw-bold text-center text-white">PICK OF THE WEEK</h1>
+        <span className="text-center text-white px-3 px-xl-5">{favorito.intro}</span>
         <div className="d-flex flex-column flex-xl-row justify-content-center py-3 px-lg-5">
           <div className="col-lg d-flex flex-column justify-content-between py-3 text-center px-3">
             <Carousel

@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom'
 import logo from '../media/logo-nav.png'
 import { HashLink } from 'react-router-hash-link'
 import ChangeLanguage from './ChangeLanguage'
+import { useTranslation } from "react-i18next";
 
 export default function Navigation({ url }) {
+  const { t } = useTranslation();
+  const header = t("header");
+
   return (
     <>
       <Navbar
@@ -35,25 +39,25 @@ export default function Navigation({ url }) {
               to='/tours'
               className='text-white fs-5 py-2 px-4 text-decoration-none'
             >
-              Tours
+              {header[0]}
             </Link>
             <HashLink
               to='/#services'
               className='text-white fs-5 py-2 px-4 text-decoration-none'
             >
-              Services
+              {header[1]}
             </HashLink>
             <Link
               to='/about-us'
               className='text-white fs-5 py-2 px-4 text-decoration-none'
             >
-              About Us
+              {header[2]}
             </Link>
             <HashLink
               to={`${url}/#contact`}
               className='text-white fs-5 py-2 px-4 text-decoration-none'
             >
-              Contact
+              {header[3]}
             </HashLink>
             <div className='d-flex flex-grow-0 justify-content-end flex-row'>
               <ChangeLanguage />

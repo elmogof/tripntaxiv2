@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 export default function GuidedToursServiceCards() {
   const { t } = useTranslation();
   const tours = t('tours');
+  const tourtitle = t('tourtitle');
 
   return (
     <div className='container-fluid d-flex flex-column py-5 px-3 px-sm-5 p-lg-0'>
@@ -24,7 +25,7 @@ export default function GuidedToursServiceCards() {
         />
       </div>
       <h1 className='fw-bold text-center' style={{ color: '#415165' }}>
-        GUIDED TOURS
+        {tourtitle}
       </h1>
       <div className='d-flex flex-wrap flex-column flex-xxl-row justify-content-center py-3 px-lg-5'>
         {tours.map((tour, index) => (
