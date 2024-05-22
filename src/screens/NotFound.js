@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navigation from '../components/Navigation'
 import ScrollToTop from '../components/ScrollToTop'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
+  useEffect(() => {
+    window.location.assign(
+      'https://tripntaxi.com/'
+    )
+  }, [])
   return (
     <>
       <Navigation />
